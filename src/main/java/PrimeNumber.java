@@ -1,11 +1,13 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Prime {
+public class PrimeNumber {
 
-    public List<Integer> getlistOfPrimeNumbers( int number ){
-        List<Integer> templist = new ArrayList<>();
-        templist.add(2);
+
+    public Integer getPrimeNumber(int number ){
+
+        Integer tempPrime = 2;
+
         int tempint = 3;
         int counter = 0;
         while( counter < number-1 ){
@@ -16,10 +18,11 @@ public class Prime {
                 }
                 i++;
             }
-            templist.add(tempint);
+            tempPrime = tempint;
             counter++;
             tempint++;
         }
-        return templist;
+        return tempPrime;
     }
+
 }
